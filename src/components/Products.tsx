@@ -3,12 +3,10 @@ import { Snowflake, Building2, Factory, Home, Truck } from 'lucide-react';
 
 const Products = () => {
   const brands = [
-    { name: "Daikin", description: "Presisi dan efisiensi Jepang", logo: "D" },
-    { name: "Mitsubishi", description: "Teknologi iklim canggih", logo: "M" },
-    { name: "LG", description: "Solusi pendingin pintar", logo: "L" },
-    { name: "Panasonic", description: "Performa yang andal", logo: "P" },
-    { name: "Samsung", description: "Inovasi dalam kenyamanan", logo: "S" },
-    { name: "Gree", description: "Sistem hemat energi", logo: "G" }
+    { name: "Daikin", description: "Presisi dan efisiensi Jepang", logo: "D", image: "public/daikin.png" },
+    { name: "Midea", description: "Teknologi iklim canggih", logo: "M", image: "public/midea.png"},
+    { name: "Changhong", description: "Solusi pendingin pintar", logo: "L", image: "public/changhong.png" },
+    { name: "Aux", description: "Performa yang andal", logo: "P", image: "public/auxx.png"},
   ];
 
   const categories = [
@@ -61,11 +59,15 @@ const Products = () => {
 
         <div className="mb-16 animate-fade-in-up">
           <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Merek Terpercaya yang Kami Distribusikan</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {brands.map((brand, index) => (
               <div key={index} className="bg-gray-50 p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300 group hover:scale-105 animate-fade-in-up" style={{animationDelay: `${index * 0.1}s`}}>
-                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-700 transition-all duration-300 group-hover:scale-110">
-                  <span className="text-2xl font-bold text-white">{brand.logo}</span>
+                <div className="w-28 h-28 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:transition-all duration-300 group-hover:scale-110">
+                  {/* <span className="text-2xl font-bold text-white">{brand.logo}</span> */}
+                  <img 
+                    src={brand.image} 
+                    alt={brand.name} 
+                    className="w-72 h-72 object-contain"></img>
                 </div>
                 <h4 className="font-semibold text-gray-900 mb-2">{brand.name}</h4>
                 <p className="text-sm text-gray-600">{brand.description}</p>
@@ -74,8 +76,8 @@ const Products = () => {
           </div>
         </div>
 
-        <div className="animate-fade-in-up">
-          <h3 className="text-2xl font-bold text-gray-900 text-center mb-12">Kategori Produk</h3>
+        {/* <div className="animate-fade-in-up">
+          <h3 className="text-2xl font-bold text-gray-900 text-center mb-12">Layanan Kami</h3>
           <div className="grid lg:grid-cols-2 gap-8">
             {categories.map((category, index) => {
               const IconComponent = category.icon;
@@ -109,15 +111,17 @@ const Products = () => {
               );
             })}
           </div>
-        </div>
+        </div> */}
 
         <div className="mt-16 bg-blue-600 rounded-2xl p-8 text-center animate-fade-in-up hover:scale-105 transition-transform duration-300">
-          <h3 className="text-2xl font-bold text-white mb-4">Butuh Bantuan Memilih Sistem yang Tepat?</h3>
+          <h3 className="text-2xl font-bold text-white mb-4">Butuh Bantuan Memilih AC yang Tepat?</h3>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
             Para ahli teknis kami siap membantu Anda memilih solusi AC yang sempurna untuk kebutuhan dan anggaran spesifik Anda.
           </p>
           <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-            Dapatkan Konsultasi Ahli
+            <a href="https://wa.me/6282111354111">
+              Dapatkan Konsultasi Ahli
+            </a>
           </button>
         </div>
       </div>

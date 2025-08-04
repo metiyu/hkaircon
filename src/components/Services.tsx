@@ -9,7 +9,7 @@ const Services = () => {
       description: "Pengiriman cepat dan andal di seluruh Jakarta dan sekitarnya dengan jaringan distribusi yang luas.",
       features: [
         "Pengiriman hari yang sama tersedia",
-        "Lokasi gudang yang beragam", 
+        "Lokasi gudang yang beragam",
         "Penanganan profesional",
         "Pelacakan real-time"
       ]
@@ -52,22 +52,23 @@ const Services = () => {
   const locations = [
     {
       icon: MapPin,
-      title: "Gudang Jakarta Pusat",
-      address: "Jl. Sudirman No. 123, Central Jakarta 10220",
-      coverage: "Jakarta Pusat & Selatan"
+      title: "Pusat Toko Jakarta Utara",
+      address: "Blok RA 11 Jl. Boulevard Raya No.5, Kelapa Gading, Jakarta Utara 14240",
+      coverage: "Jakarta Pusat & Selatan",
+      maps: "https://maps.app.goo.gl/zd2wC5YTMoUNVqpJA"
     },
-    {
-      icon: MapPin,
-      title: "Pusat Distribusi Jakarta Utara", 
-      address: "Jl. Pelabuhan Raya No. 456, North Jakarta 14250",
-      coverage: "Jakarta Utara & Bekasi"
-    },
-    {
-      icon: MapPin,
-      title: "Fasilitas Jakarta Barat",
-      address: "Jl. Puri Indah No. 789, West Jakarta 11610", 
-      coverage: "Jakarta Barat & Tangerang"
-    }
+    // {
+    //   icon: MapPin,
+    //   title: "Pusat Distribusi Jakarta Utara", 
+    //   address: "Jl. Pelabuhan Raya No. 456, North Jakarta 14250",
+    //   coverage: "Jakarta Utara & Bekasi"
+    // },
+    // {
+    //   icon: MapPin,
+    //   title: "Fasilitas Jakarta Barat",
+    //   address: "Jl. Puri Indah No. 789, West Jakarta 11610", 
+    //   coverage: "Jakarta Barat & Tangerang"
+    // }
   ];
 
   return (
@@ -84,10 +85,10 @@ const Services = () => {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-slide-in-up" style={{animationDelay: `${index * 0.1}s`}}>
+              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-105 animate-slide-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="flex items-start mb-6">
-                  <div className="bg-blue-100 w-16 h-16 rounded-xl flex items-center justify-center mr-6 flex-shrink-0 hover:bg-blue-600 hover:scale-110 transition-all duration-300 group">
-                    <IconComponent className="h-8 w-8 text-blue-600" />
+                  <div className="bg-blue-100 w-16 h-16 rounded-xl flex items-center justify-center mr-6 flex-shrink-0 group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300 group">
+                    <IconComponent className="h-8 w-8 text-blue-600 group-hover:text-white transition-all duration-300" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
@@ -109,17 +110,19 @@ const Services = () => {
 
         <div className="bg-white rounded-2xl p-8 shadow-lg animate-fade-in-up hover:scale-105 transition-transform duration-300">
           <h3 className="text-2xl font-bold text-gray-900 text-center mb-12">Jaringan Distribusi Kami</h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-1 gap-8">
             {locations.map((location, index) => {
               const IconComponent = location.icon;
               return (
-                <div key={index} className="text-center animate-fade-in-up" style={{animationDelay: `${index * 0.1}s`}}>
+                <div key={index} className="text-center animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
                   <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 hover:bg-blue-600 hover:scale-110 transition-all duration-300 group">
-                    <IconComponent className="h-8 w-8 text-blue-600" />
+                    <a href="https://maps.app.goo.gl/zd2wC5YTMoUNVqpJA" target='_blank' rel='noopener noreferrer'>
+                      <IconComponent className="h-8 w-8 text-blue-600 group-hover:text-white transition-all duration-300" />
+                    </a>
                   </div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-3">{location.title}</h4>
                   <p className="text-gray-600 mb-2">{location.address}</p>
-                  <p className="text-sm text-blue-600 font-medium">Melayani: {location.coverage}</p>
+                  {/* <p className="text-sm text-blue-600 font-medium">Melayani: {location.coverage}</p> */}
                 </div>
               );
             })}
@@ -135,14 +138,16 @@ const Services = () => {
             Ketika Anda membutuhkan bantuan segera, tim dukungan darurat kami tersedia sepanjang waktu untuk membantu menyelesaikan masalah kritis.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <div className="bg-white/10 backdrop-blur rounded-lg p-4 hover:bg-white/20 transition-colors duration-300">
+            {/* <div className="bg-white/10 backdrop-blur rounded-lg p-4 hover:bg-white/20 transition-colors duration-300">
               <p className="text-white font-semibold">Hotline Darurat</p>
-              <p className="text-blue-100">+62 21 5555 0999</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur rounded-lg p-4 hover:bg-white/20 transition-colors duration-300">
-              <p className="text-white font-semibold">Dukungan WhatsApp</p>
-              <p className="text-blue-100">+62 812 3456 7890</p>
-            </div>
+              <p className="text-blue-100">+6282111354111</p>
+            </div> */}
+            <a href="https://wa.me/6282111354111">
+              <div className="bg-white/10 backdrop-blur rounded-lg p-4 hover:bg-white/20 transition-colors duration-300">
+                <p className="text-white font-semibold">Dukungan WhatsApp</p>
+                <p className="text-blue-100">+62 821 1135 4111</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>

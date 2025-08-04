@@ -12,8 +12,8 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img 
-          src="https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" 
+        <img
+          src="/public/checking-conditioner.jpg"
           alt="Sistem AC modern"
           className="w-full h-full object-cover animate-slow-zoom"
         />
@@ -23,30 +23,35 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 animate-slide-up">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-delay-1">
-            Mitra Terpercaya Anda dalam 
-            <span className="text-blue-300 animate-pulse"> Solusi Kontrol Iklim</span>
+            Mitra Terpercaya Anda dalam
+            <span className="text-white"> </span>
+            <span className="text-white">Kebutuhan AC Sehari-hari</span>
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed animate-fade-in-delay-2">
-            Distribusi & Dukungan AC Premium di Seluruh Wilayah
+            Air Conditioner Specialist Servis/Jual/Perbaikan
           </p>
 
           <div className="mb-8 animate-fade-in-delay-3">
-            <p className="text-lg text-white leading-relaxed">
-              Dengan lebih dari 15 tahun keunggulan di industri HVAC, HK AIRCONINDO telah memantapkan diri sebagai distributor AC terkemuka di Jakarta. Kami melayani klien residensial, komersial, dan industri dengan komitmen yang tak tergoyahkan terhadap kualitas, keandalan, dan kepuasan pelanggan di seluruh wilayah Jakarta Raya.
-            </p>
+            <span className="text-lg text-white leading-relaxed">
+              Dengan lebih dari 15 tahun keunggulan di industri,
+            </span>
+            <span className="text-lg text-white leading-relaxed font-bold"> HK AIRCONINDO
+            </span>
+            <span className="text-lg text-white leading-relaxed"> telah memantapkan diri sebagai distributor AC terkemuka di Jakarta. Kami melayani klien residensial, komersial, dan industri dengan komitmen yang tak tergoyahkan terhadap kualitas, keandalan, dan kepuasan pelanggan di seluruh wilayah DKI Jakarta.
+            </span>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-delay-4">
-            <button 
+            <button
               onClick={() => scrollToSection('products')}
               className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 flex items-center justify-center group hover:scale-105 hover:shadow-xl"
             >
               Jelajahi Produk
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            
-            <button 
+
+            <button
               onClick={() => scrollToSection('contact')}
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 flex items-center justify-center hover:scale-105 hover:shadow-xl"
             >

@@ -20,15 +20,15 @@ const Header = () => {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+62 21 5555 0123</span>
+                <span>+62 821 1135 4111</span>
               </div>
-              <div className="flex items-center space-x-2">
+              {/* <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
                 <span>info@hkairconindo.co.id</span>
-              </div>
+              </div> */}
             </div>
             <div className="hidden sm:block">
-              <span>Sen-Jum: 08.00-18.00 | Sab: 08.00-14.00</span>
+              <span>Sen-Sab: 09.00-17.00</span>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@ const Header = () => {
             <button onClick={() => scrollToSection('products')} className="text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105">Produk</button>
             <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105">Layanan</button>
             <button onClick={() => scrollToSection('why-choose-us')} className="text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105">Mengapa Kami</button>
-            <button onClick={() => scrollToSection('contact')} className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-lg">Kontak</button>
+            <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-lg"><a href="https://wa.me/6282111354111">Hubungi Kami!</a></button>
           </div>
 
           <div className="md:hidden">
@@ -64,7 +64,7 @@ const Header = () => {
               <button onClick={() => scrollToSection('products')} className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors">Produk</button>
               <button onClick={() => scrollToSection('services')} className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors">Layanan</button>
               <button onClick={() => scrollToSection('why-choose-us')} className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors">Mengapa Kami</button>
-              <button onClick={() => scrollToSection('contact')} className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors">Kontak</button>
+              <button className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors"><a href="https://wa.me/6282111354111">Hubungi Kami!</a></button>
             </div>
           </div>
         )}

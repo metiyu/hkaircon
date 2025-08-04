@@ -48,14 +48,14 @@ const About = () => {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Kisah Kami</h3>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                HK AIRCONINDO didirikan dengan misi sederhana: memberikan akses kepada penduduk dan bisnis Jakarta terhadap solusi AC terbaik dunia. Yang dimulai sebagai perusahaan distribusi kecil telah berkembang menjadi mitra HVAC paling terpercaya di wilayah ini.
+                HK AIRCONINDO didirikan dengan misi sederhana: memberikan akses kepada penduduk dan bisnis Jakarta terhadap solusi AC terbaik dunia. Yang dimulai sebagai perusahaan distribusi kecil telah berkembang menjadi salah satu mitra HVAC terpercaya di wilayah DKI Jakarta.
               </p>
               <p>
-                Pemahaman mendalam kami tentang tantangan iklim unik Jakarta, dikombinasikan dengan pengetahuan produk yang luas dan komitmen terhadap keunggulan layanan, telah memungkinkan kami membangun hubungan yang langgeng dengan ribuan pelanggan yang puas.
+                Pemahaman mendalam kami tentang tantangan iklim DKI Jakarta, dikombinasikan dengan pengetahuan produk yang luas dan komitmen terhadap keunggulan layanan, telah memungkinkan kami membangun hubungan yang erat dengan ribuan pelanggan yang puas.
               </p>
-              <p>
-                Hari ini, kami dengan bangga melayani klien residensial, komersial, dan industri di seluruh wilayah Jakarta Raya, menawarkan solusi komprehensif dari pemilihan produk hingga dukungan instalasi dan pemeliharaan berkelanjutan.
-              </p>
+              {/* <p>
+                Hari ini, kami dengan bangga melayani klien residensial, komersial, dan industri di seluruh wilayah DKI Jakarta, menawarkan solusi komprehensif dari pemilihan produk hingga dukungan instalasi dan pemeliharaan berkelanjutan.
+              </p> */}
             </div>
           </div>
 
