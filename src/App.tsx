@@ -5,7 +5,7 @@ import About from './components/About';
 import Products from './components/Products';
 import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
-import Contact from './components/Contact';
+// import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
