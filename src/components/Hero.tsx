@@ -13,7 +13,7 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/assets/checking-conditioner.jpg"
+          src="/checking-conditioner.jpg"
           alt="Sistem AC modern"
           className="w-full h-full object-cover animate-slow-zoom"
         />

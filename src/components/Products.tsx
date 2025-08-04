@@ -3,10 +3,10 @@ import { Snowflake, Building2, Factory, Home, Truck } from 'lucide-react';
 
 const Products = () => {
   const brands = [
-    { name: "Daikin", description: "Presisi dan efisiensi Jepang", logo: "D", image: "/assets/daikin.png" },
-    { name: "Midea", description: "Teknologi iklim canggih", logo: "M", image: "/assets/midea.png"},
-    { name: "Changhong", description: "Solusi pendingin pintar", logo: "L", image: "/assets/changhong.png" },
-    { name: "Aux", description: "Performa yang andal", logo: "P", image: "/assets/auxx.png"},
+    { name: "Daikin", description: "Presisi dan efisiensi Jepang", logo: "D", image: "/daikin.png" },
+    { name: "Midea", description: "Teknologi iklim canggih", logo: "M", image: "/midea.png"},
+    { name: "Changhong", description: "Solusi pendingin pintar", logo: "L", image: "/changhong.png" },
+    { name: "Aux", description: "Performa yang andal", logo: "P", image: "/auxx.png"},
   ];
 
   const categories = [
